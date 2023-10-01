@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  html {
+    @apply font-serif;
   }
-}
+  .bg-frameshop {
+    background: url("/images/frameshop/banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-banner-2 {
+    background: url("/images/home/banner-2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-banner-3 {
+    background: url("/images/home/banner-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-cafe {
+    background: url("/images/cafe/cafe-banner-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .bg-home-banner {
+    background: url("/images/home/banner-img.png"),
+      linear-gradient(
+        180deg,
+        rgba(245, 245, 245, 0.15) 0%,
+        rgba(240, 240, 240, 0.5) 100%
+      );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .btn-primary {
+    @apply py-2 px-4 rounded-lg bg-primary text-white;
+  }
+  .btn-secondary {
+    @apply py-2 px-4 rounded-lg border border-primary text-primary hover:text-white hover:bg-primary transition duration-200;
+  }
+  ul.slick-dots li.slick-active span.blue-dot {
+    @apply bg-primary border-0;
+  }
 }
