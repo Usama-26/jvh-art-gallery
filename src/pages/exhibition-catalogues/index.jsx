@@ -15,7 +15,7 @@ export default function ExhibitionCatalogues() {
       <section className="py-24">
         <div className="mx-auto container">
           <Heading>
-            <span className="text-4xl lg:text-5xl">Exhibition Catalogues</span>
+            <span className="text-4xl lg:text-5xld">Exhibition Catalogues</span>
           </Heading>
 
           <div className="py-24">

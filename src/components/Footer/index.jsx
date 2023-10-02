@@ -1,13 +1,15 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from "next/image";
+import { FaFacebook } from "react-icons/fa6";
 import { HiLocationMarker, HiPhone, HiMail } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer class="bg-background-color">
-      <div class="container px-6 py-12 mx-auto text-white">
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-          <div>
+    <footer className="bg-background-color">
+      <div className="container px-6 py-12 mx-auto text-white">
+        <div className="grid grid-cols-1 gap-6 sm:gap-y-10 lg:grid-cols-5">
+          <div className="lg:col-span-2">
             <Image
               src={"/images/jvh-logo@2x.png"}
               height={105}
@@ -21,11 +23,9 @@ export default function Footer() {
               thought, and evoke emotions.
             </p>
           </div>
-
-          <div className="">
-            <p class="text-lg">Quick Link</p>
-
-            <div class="flex flex-col items-start mt-5 space-y-2">
+          <div>
+            <p className="text-xl">Quick Link</p>
+            <div className="flex flex-col items-start mt-5 space-y-2">
               <a href="/home" class="hover:underline hover:text-primary">
                 Home
               </a>
@@ -52,41 +52,41 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          <div className="">
-            <p className="text-lg" class="">
-              Contact Us
-            </p>
-
-            <div class="flex flex-col items-start mt-5 space-y-2">
-              <a href="" class="inline-flex hover:underline hover:text-primary">
-                <MdLocationOn className=" w-8 h-8 fill-primary mr-2" />
+          <div>
+            <p className="text-xl">Contact Us</p>
+            <div className="flex flex-col items-start mt-5 space-y-2">
+              <span className="inline-flex gap-2">
+                <MdLocationOn className="lg:w-10 lg:h-10 w-5 h-5 fill-primary" />
                 <span>
                   593 Jacqueline Dr, Garsfontein, Pretoria, 0042, South Africa
                 </span>
-              </a>
+              </span>
+              <span className="inline-flex gap-2">
+                <HiPhone className="w-5 h-5 fill-primary" />
+                <a href="">0797809807</a>
+              </span>
+              <span className="inline-flex gap-2">
+                <HiMail className="w-5 h-5 fill-primary" />
+                <a href="">info@jvhartgallery.co.za</a>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p className="text-xl">Follow Us</p>
+
+            <div className="mt-5">
               <a
-                href="tel:0797809807"
-                class="inline-flex hover:underline hover:text-primary"
+                href="/facebook"
+                className="inline-block rounded-full bg-white p-2"
               >
-                <HiPhone className="self-center w-4 h-4 fill-primary mr-2" />
-                <span>0797809807</span>
-              </a>
-              <a
-                href="mailto:info@jvhartgallery.co.za"
-                class="inline-flex items-center hover:underline hover:text-primary"
-              >
-                <HiMail className=" w-4 h-4 fill-primary mr-2" />
-                <span>info@jvhartgallery.co.za</span>
+                <FaFacebook className="w-5 h-5 fill-primary" />
               </a>
             </div>
           </div>
         </div>
-
-        <hr class="my-6 border-gray-200 border-gray-700 h-2" />
-
-        <div class="sm:flex sm:items-center sm:justify-between text-sm">
-          <div class="flex gap-4 hover:cursor-pointer">
+        <hr className="my-6 border-gray-700 h-2" />
+        <div className="sm:flex sm:items-center sm:justify-between flex-col gap-2 lg:gap-0 lg:flex-row text-sm">
+          <div className="flex gap-4 hover:cursor-pointer">
             <a
               href="/privacy-policy"
               className="hover:underline hover:text-primary"
@@ -101,10 +101,10 @@ export default function Footer() {
               Terms & Conditions
             </a>
           </div>
-          <p class="font-sans p-8 text-start md:text-center md:p-4">
+          <p className="font-sans lg:p-8 text-start md:text-center md:p-4">
             Copyright © 2023. All rights reserved.
           </p>
-          <p class="font-sans p-8 text-start md:text-center md:p-4">
+          <p className="font-sans lg:p-8 text-start md:text-center md:p-4">
             Crafted by:{" "}
             <a href="https://www.mrrobotdev.com" className="hover:underline">
               mrrobotdev.com

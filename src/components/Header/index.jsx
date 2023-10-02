@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className=" font-serif bg-background-color">
+    <header className=" lg:block hidden font-serif bg-background-color">
       <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
         <Link
           href={"/"}
