@@ -15,11 +15,11 @@ export default function ExhibitionCatalogues() {
       <section className="py-24">
         <div className="mx-auto container">
           <Heading>
-            <span>Exhibition Catalogues</span>
+            <span className="text-4xl lg:text-5xl">Exhibition Catalogues</span>
           </Heading>
 
           <div className="py-24">
-            <div className="grid gap-16 grid-cols-2 text-center">
+            <div className="grid gap-16 lg:grid-cols-2 grid-cols-1 text-center">
               {images.map((image) => (
                 <div key={image}>
                   <Image

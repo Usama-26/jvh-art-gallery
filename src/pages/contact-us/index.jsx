@@ -6,13 +6,13 @@ export default function Home() {
     <WebLayout>
       <div className="py-20">
         <Heading>
-          <span className="text-5xl">Contact Us</span>
+          <span className="lg:text-5xl text-4xl">Contact Us</span>
         </Heading>
       </div>
-      <section className="container mx-auto px-10 py-20">
-        <div className="flex justify-between gap-8">
-          <div className="basis-7/12 relative">
-            <div className="absolute left-16 w-[500px] h-full -rotate-[27deg] bg-primary/10 -z-10"></div>
+      <section className="container mx-auto lg:px-10 px-5 lg:py-20">
+        <div className="flex justify-between lg:flex-row flex-col gap-8">
+          <div className="lg:basis-7/12 basis-full relative">
+            <div className="absolute left-16 w-[500px] lg:block hidden h-full -rotate-[27deg] bg-primary/10 -z-10"></div>
             <Image
               src={"/images/contact-us/contact-us.png"}
               width={648}
@@ -21,7 +21,7 @@ export default function Home() {
               alt="Contact Us Image"
             />
           </div>
-          <div className="basis-5/12 space-y-12">
+          <div className="lg:basis-5/12 basis-full space-y-12">
             <div className="space-y-2">
               <h2 className="font-display font-semibold text-lg uppercase text-primary">
                 Hours
@@ -48,10 +48,10 @@ export default function Home() {
 
       <div className="py-20">
         <Heading>
-          <span className="text-5xl">Getting Here</span>
+          <span className="lg:text-5xl text-4xl">Getting Here</span>
         </Heading>
       </div>
-      <section className="container mx-auto px-10 py-20">
+      <section className="container mx-auto lg:px-10 px-5 lg:py-20 py-10">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4041.604863198638!2d28.296099557490578!3d-25.7919915427572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560a9e9380e39%3A0x3eed965050d1a255!2s593%20Jacqueline%20Dr%2C%20Garsfontein%2C%20Pretoria%2C%200042%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1696011075594!5m2!1sen!2s"
           width="100%"
@@ -70,7 +70,7 @@ export default function Home() {
 
 function ContactForm() {
   return (
-    <form action="" className="w-96 space-y-4">
+    <form action="" className="lg:w-96 w-80 space-y-4">
       <input
         type="text"
         className="w-full py-2 border-b focus:outline-none focus:border-primary"

@@ -5,27 +5,27 @@ import Image from "next/image";
 export default function Frameshop() {
   return (
     <WebLayout>
-      <section className="py-24 bg-frameshop space-y-8">
-        <h1 className="font-display font-semibold text-6xl leading-snug  text-center">
+      <section className="lg:py-24 py-16 px-5 bg-frameshop space-y-8">
+        <h1 className="font-display font-semibold lg:text-6xl text-4xl leading-snug  text-center ">
           Frame Your ArtWork <br />
           Perfectly
         </h1>
-        <p className="text-lg font-serif text-center">
+        <p className="lg:text-lg font-serif text-center">
           Bring your artwork to life with our high-quality art frames. <br />{" "}
           Choose from a variety of styles and sizes to showcase your <br />{" "}
           unique piece.
         </p>
       </section>
-      <section className="container mx-auto py-24">
+      <section className="container mx-auto lg:py-24 py-16">
         <Heading>
-          <span className="text-5xl">
+          <span className="lg:text-5xl text-4xl">
             Get a free quotation <br /> for your work
           </span>
         </Heading>
 
-        <div className="p-20 flex">
+        <div className="lg:px-20 px-5 lg:py-24 py-16 flex lg:flex-row flex-col lg:gap-0 gap-8">
           <div className="basis-6/12">
-            <div className=" w-96 mx-auto relative">
+            <div className=" lg:w-96 w-72 mx-auto relative">
               <div className="absolute w-full h-full -rotate-[15deg] bg-primary/10 -z-10"></div>
               <Image
                 src={"/images/frameshop/frameshop-img.png"}
@@ -37,7 +37,7 @@ export default function Frameshop() {
             </div>
           </div>
           <div className="basis-6/12 ">
-            <div className=" ml-5 text-lg w-9/12 text-justify space-y-2">
+            <div className=" lg:ml-5  text-lg lg:w-9/12 w-full mx-auto text-justify space-y-2">
               <p>
                 Please feel free to bring your works for a free quotation,we
                 believe that we will be able to make a plan to meet your budget.
