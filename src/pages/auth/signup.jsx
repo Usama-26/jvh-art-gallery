@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from "next/image";
 import { MdMail, MdLock, MdPhone } from "react-icons/md";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
@@ -15,12 +16,6 @@ export default function Login() {
             className="mx-auto"
           />
           <SignupForm />
-          {/* <p className="text-center text-white mt-10">
-            {"Already have an account?"}
-            <a href="/auth/login" className="text-primary hover:underline">
-              {" Sign in"}
-            </a>
-          </p> */}
         </div>
       </div>
     </main>

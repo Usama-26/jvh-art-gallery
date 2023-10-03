@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from "next/image";
 import { MdMail, MdLock } from "react-icons/md";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
