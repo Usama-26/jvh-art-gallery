@@ -4,6 +4,7 @@
 
 @layer components {
   html {
+    /* overflow: hidden; */
     @apply font-serif;
   }
   .bg-frameshop {

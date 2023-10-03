@@ -212,32 +212,17 @@ function Hero() {
             </div>
           </div>
           <div className="basis-5/12">
-            <div className="lg:h-[430px] h-[350px] lg:w-[500px] md:w-[450px] w-[350px] mx-auto relative">
+            <div className=" relative">
               <Image
-                src={"/images/home/hero-img-1.png"}
-                width={372}
-                height={279}
+                src={"/images/home/banner-imgs.png"}
+                width={640}
+                height={504}
                 alt="Hero 1"
-                className=" absolute top-0 right-0 shadow-lg"
-              />
-              <Image
-                src={"/images/home/hero-img-2.png"}
-                width={271}
-                height={204}
-                alt="Hero 2"
-                className=" absolute bottom-14 left-0 shadow-lg"
-              />
-              <Image
-                src={"/images/home/hero-img-2.png"}
-                width={187}
-                height={140}
-                alt="Hero 3"
-                className=" absolute right-8 -bottom-0 shadow-lg"
               />
             </div>
           </div>
         </div>
-        <div className="lg:-mt-10">
+        <div className="">
           <ScrollDownIcon />
         </div>
       </div>
