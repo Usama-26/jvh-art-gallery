@@ -68,7 +68,7 @@ function SidePanel({ show, togglePanel }) {
     },
 
     {
-      path: "#art-classes-and-studio-events",
+      path: "/art-classes-and-studio-events",
       link: "Art Classes & Studios",
     },
 
