@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { MdMail, MdLock } from "react-icons/md";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
+import Link from "next/link";
 export default function Login() {
   return (
     <main className="w-screen h-screen bg-background-color">
@@ -49,12 +50,12 @@ function LoginForm() {
         </button>
       </span>
       <p className="text-end">
-        <a
+        <Link
           className="hover:underline text-primary"
           href="/auth/forgot-password"
         >
           Forgot Password
-        </a>
+        </Link>
       </p>
       <button className="w-full py-2 mt-2 bg-primary rounded-full uppercase tracking-widest text-white">
         Login

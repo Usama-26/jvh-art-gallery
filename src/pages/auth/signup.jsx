@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { MdMail, MdLock, MdPhone } from "react-icons/md";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -108,7 +109,7 @@ function SignupForm() {
       <span className="inline-flex items-center gap-4 py-2">
         <input type="checkbox" id="terms-and-conditions" />
         <label htmlFor="terms-and-conditions" className="text-xs">
-          Accept <a href="/terms-and-conditions">Terms & Conditions</a>
+          Accept <Link href="/terms-and-conditions">Terms & Conditions</Link>
         </label>
       </span>
       <button className="w-full py-2 mt-2 bg-primary rounded-full uppercase tracking-widest text-white">
@@ -116,9 +117,9 @@ function SignupForm() {
       </button>
       <p className="text-center text-white mt-10">
         {"Don't have an account?"}
-        <a href="/auth/signup" className="text-primary hover:underline">
+        <Link href="/auth/signup" className="text-primary hover:underline">
           {" Sign up"}
-        </a>
+        </Link>
       </p>
     </form>
   );
