@@ -224,7 +224,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="text-center">
+        <div className="flex justify-center">
           <Link href={"/#exhibition"}>
             <ScrollDownIcon />
           </Link>

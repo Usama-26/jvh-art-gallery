@@ -16,9 +16,11 @@ export default function Cafe() {
               <br />
               Delights
             </h1>
-            <Link href={"/cafe/#cafeMenu"}>
-              <ScrollDownIcon />
-            </Link>
+            <div className="justify-center flex">
+              <Link href={"/cafe/#cafeMenu"}>
+                <ScrollDownIcon />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
