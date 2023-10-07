@@ -93,7 +93,9 @@ function ContactForm() {
         className="w-full py-2 border-b focus:outline-none focus:border-primary"
         placeholder="Message"
       >
-        <option value="">Subject</option>
+        <option value="">Exhibition</option>
+        <option value="">Art Classes & Studios</option>
+        <option value="">Frameshop</option>
       </select>
       <input
         type="text"

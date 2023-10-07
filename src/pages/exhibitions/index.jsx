@@ -2,7 +2,7 @@ import Heading from "@/components/Heading";
 import WebLayout from "@/layouts/WebLayout";
 import Image from "next/image";
 
-export default function ClassAndEvents() {
+export default function Exhibitions() {
   return (
     <WebLayout>
       <section className="pt-24 bg-gradient-to-b from-[#F5F5F5] to-[#F0F0F0]">
@@ -49,26 +49,27 @@ export default function ClassAndEvents() {
           <Heading>
             <span className="lg:text-5xl text-3xl">Now Showing</span>
           </Heading>
-          <EventSection imgPath={"/images/exhibition/the-artist-choice.png"}>
+          <EventSection
+            id={"mementoSolo"}
+            imgPath={"/images/exhibition/memento-solo.png"}
+          >
             <h2 className="font-display font-semibold text-lg hidden lg:block  text-primary">
               JVH EXHIBITIONS
             </h2>
-            <h1 className="font-display lg:text-5xl text-4xl">
-              The Artist’s Choice
-            </h1>
+            <h1 className="font-display lg:text-5xl text-4xl">Memento Solo</h1>
             <div className="uppercase font-display w-4/5  inline-flex lg:justify-end  justify-center items-center">
               <hr className="inline lg:w-28 w-8 mr-2" />
-              <span>GROUP EXHIBITION</span>
+              <span>Moira MacMurray</span>
             </div>
             <div className="w-4/5 lg:mt-0 mt-5 lg:mx-0 mx-auto space-y-4 ">
               <h4 className="font-display lg:text-lg text-xl font-semibold">
                 WELCOME,
               </h4>
               <p className="italic">
-                Opening Date: Saturday 19 August, 2023 @ 11h 00
+                Opening Date: Sunday 6 August, 2023 @ 11h 00
               </p>
 
-              <p>Duration: 19 to 31 August, 2023</p>
+              <p>Duration: 6 to 31 August, 2023</p>
 
               <p>
                 Johanns van Heerdan Art Gallery, 593 Jacqueline Drive
@@ -79,6 +80,7 @@ export default function ClassAndEvents() {
             </div>
           </EventSection>
           <EventSection
+            id={"enBeaute"}
             imgPath={"/images/exhibition/en-beaute.png"}
             direction="md:flex-row-reverse flex-col-reverse"
           >
@@ -108,7 +110,10 @@ export default function ClassAndEvents() {
               <button className="btn-primary ">Book Now</button>
             </div>
           </EventSection>
-          <EventSection imgPath={"/images/exhibition/my-journey.png"}>
+          <EventSection
+            id={"myJourney"}
+            imgPath={"/images/exhibition/my-journey.png"}
+          >
             <h2 className="font-display font-semibold text-lg hidden lg:block  text-primary">
               JVH EXHIBITIONS
             </h2>
@@ -142,12 +147,13 @@ export default function ClassAndEvents() {
 }
 
 function EventSection({
+  id,
   imgPath,
   direction = "md:flex-row flex-col-reverse",
   children,
 }) {
   return (
-    <div className={`flex gap-8 ${direction} py-24 px-5`}>
+    <div id={id} className={`flex gap-8 ${direction} py-24 px-5`}>
       <div className="basis-1/2 lg:text-left text-center lg:mt-0 mt-10">
         {children}
       </div>

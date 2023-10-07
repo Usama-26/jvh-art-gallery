@@ -13,6 +13,7 @@ export default function ClassAndEvents() {
             </span>
           </Heading>
           <EventSection
+            id={"mixedMedia"}
             imgPath={
               "/images/art-class-and-studio-events/mixed-media-encaustic-workshop.png"
             }
@@ -57,6 +58,7 @@ export default function ClassAndEvents() {
             <span className="lg:text-5xl text-3xl">Now Showing</span>
           </Heading>
           <EventSection
+            id={"artClass"}
             imgPath={
               "/images/art-class-and-studio-events/drawing-art-class.png"
             }
@@ -98,6 +100,7 @@ export default function ClassAndEvents() {
             </div>
           </EventSection>
           <EventSection
+            id={"etchingClass"}
             imgPath={
               "/images/art-class-and-studio-events/etching-and-lino-cutting-classes.png"
             }
@@ -138,12 +141,13 @@ export default function ClassAndEvents() {
 }
 
 function EventSection({
+  id,
   imgPath,
   direction = "md:flex-row flex-col-reverse",
   children,
 }) {
   return (
-    <div className={`flex gap-8 ${direction} lg:py-24 py-16 px-5`}>
+    <div id={id} className={`flex gap-8 ${direction} lg:py-24 py-16 px-5`}>
       <div className="basis-1/2 lg:text-left text-center lg:mt-0 mt-10">
         {children}
       </div>
