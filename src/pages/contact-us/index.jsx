@@ -12,14 +12,16 @@ export default function Home() {
       <section className="container mx-auto lg:px-10 px-5 lg:py-20">
         <div className="flex justify-between lg:flex-row flex-col gap-8">
           <div className="lg:basis-7/12 basis-full relative">
-            <div className="absolute left-16 w-[500px] lg:block hidden h-full -rotate-[27deg] bg-primary/10 -z-10"></div>
-            <Image
-              src={"/images/contact-us/contact-us.png"}
-              width={648}
-              height={632}
-              className=" mt-5 w-[550px] mx-auto z-40"
-              alt="Contact Us Image"
-            />
+            <div className="lg:w-[550px] w-[300px] mx-auto relative">
+              <div className="absolute h-full w-full -rotate-[25deg] bg-primary/10 z-0"></div>
+              <Image
+                src={"/images/contact-us/contact-us.png"}
+                width={648}
+                height={632}
+                alt="mixed-media-encaustic-workshop"
+                className="relative lg:w-[550px] w-[300px] z-10"
+              />
+            </div>
           </div>
           <div className="lg:basis-5/12 basis-full space-y-12">
             <div className="space-y-2">

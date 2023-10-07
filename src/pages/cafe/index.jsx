@@ -3,6 +3,7 @@ import { ScrollDownIcon } from "@/components/ScrollDownIcon";
 import SlickSlider from "@/components/SlickSlider";
 import WebLayout from "@/layouts/WebLayout";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Cafe() {
   return (
@@ -15,12 +16,14 @@ export default function Cafe() {
               <br />
               Delights
             </h1>
-            <ScrollDownIcon />
+            <Link href={"/cafe/#cafeMenu"}>
+              <ScrollDownIcon />
+            </Link>
           </div>
         </div>
       </section>
-      <section>
-        <div className="py-24">
+      <section id="cafeMenu">
+        <div className="pt-24">
           <div className="container mx-auto">
             <div className="text-center">
               <h2 className="font-display font-semibold text-lg uppercase text-primary mb-2">

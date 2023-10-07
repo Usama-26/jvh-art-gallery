@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className=" lg:block hidden font-serif bg-background-color">
-      <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+      <div className="container mx-auto flex justify-between p-2 flex-col md:flex-row items-center">
         <Link
           href={"/"}
           className="flex title-font font-medium items-center  mb-4 md:mb-0"
@@ -17,26 +17,41 @@ export default function Header() {
             alt="JVH Logo"
           />
         </Link>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base text-white justify-center">
-          <Link href="/" className="mr-5 hover:text-primary">
+        <nav className="basis-7/12 flex flex-wrap items-center text-base text-white justify-between">
+          <Link
+            href="/"
+            className="mr-5 border-b border-transparent hover:border-primary"
+          >
             Home
           </Link>
-          <a href="/exhibitions" className="mr-5 hover:text-primary">
+          <a
+            href="/exhibitions"
+            className="mr-5 border-b border-transparent hover:border-primary"
+          >
             Exhibitions
           </a>
           <a
             href="/art-classes-and-studio-events"
-            className="mr-5 hover:text-primary"
+            className="mr-5 border-b border-transparent hover:border-primary"
           >
             Art Classes & Studio Events
           </a>
-          <a href="/frameshop" className="mr-5 hover:text-primary">
+          <a
+            href="/frameshop"
+            className="mr-5 border-b border-transparent hover:border-primary"
+          >
             Frameshop
           </a>
-          <a href="/cafe" className="mr-5 hover:text-primary">
+          <a
+            href="/cafe"
+            className="mr-5 border-b border-transparent hover:border-primary"
+          >
             Cafe
           </a>
-          <a href="/contact-us" className="mr-5 hover:text-primary">
+          <a
+            href="/contact-us"
+            className="mr-5 border-b border-transparent hover:border-primary"
+          >
             Contact us
           </a>
         </nav>

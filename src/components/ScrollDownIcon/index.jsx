@@ -5,8 +5,8 @@ export function ScrollDownIcon() {
       <span className="inline">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="151"
-          height="182"
+          width="120"
+          height="120"
           viewBox="0 0 151 182"
           fill="none"
         >

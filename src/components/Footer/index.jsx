@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-xl">Quick Link</p>
-            <div className="flex flex-col items-start mt-5 space-y-2">
+            <div className="flex flex-col items-start mt-5 space-y-4">
               <a href="/home" class="hover:underline hover:text-primary">
                 Home
               </a>
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-xl">Contact Us</p>
-            <div className="flex flex-col items-start mt-5 space-y-2">
+            <div className="flex flex-col items-start mt-5 space-y-4">
               <span className="inline-flex gap-2">
                 <MdLocationOn className="lg:w-10 lg:h-10 w-5 h-5 fill-primary" />
                 <span>
@@ -102,7 +102,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="font-sans lg:p-8 text-start md:text-center md:p-4">
-            Copyright © 2023. All rights reserved.
+            Copyright© @JVH 2023. All rights reserved.
           </p>
           <p className="font-sans lg:p-8 text-start md:text-center md:p-4">
             Crafted by:{" "}

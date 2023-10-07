@@ -10,14 +10,14 @@ export default function Home() {
     <main className={`${lora.variable} ${display.variable} font-serif`}>
       <WebLayout>
         <Hero />
-        <section className="lg:py-24 py-16">
+        <section id="exhibition" className="lg:py-24 py-16">
           <div className="container mx-auto">
             <Heading>
               <span className="lg:text-5xl text-3xl">Exhibitions</span>
             </Heading>
             <div className="container mx-auto">
-              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:px-20 px-10 mt-20">
-                <div className="bg-white shadow-md text-center ">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:px-20 px-10 mt-20">
+                <div className="bg-white shadow-custom text-center ">
                   <Image
                     src={"/images/exhibition/memento-solo.png"}
                     height={250}
@@ -31,7 +31,7 @@ export default function Home() {
                     <button className="btn-secondary">Book Now</button>
                   </div>
                 </div>
-                <div className="bg-white shadow-md text-center ">
+                <div className="bg-white shadow-custom text-center ">
                   <Image
                     src={"/images/exhibition/my-journey.png"}
                     height={250}
@@ -45,7 +45,7 @@ export default function Home() {
                     <button className="btn-secondary">Book Now</button>
                   </div>
                 </div>
-                <div className="bg-white shadow-md text-center ">
+                <div className="bg-white shadow-custom text-center ">
                   <Image
                     src={"/images/exhibition/en-beaute.png"}
                     height={250}
@@ -88,8 +88,8 @@ export default function Home() {
             </Heading>
 
             <div className="container mx-auto">
-              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:px-20 px-10 mt-20">
-                <div className="bg-white shadow-md ">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:px-20 px-10 mt-20">
+                <div className="bg-white shadow-custom ">
                   <Image
                     src={
                       "/images/art-class-and-studio-events/mixed-media-encaustic-workshop.png"
@@ -114,7 +114,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white shadow-md ">
+                <div className="bg-white shadow-custom ">
                   <Image
                     src={
                       "/images/art-class-and-studio-events/etching-and-lino-cutting-classes.png"
@@ -139,7 +139,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white shadow-md ">
+                <div className="bg-white shadow-custom ">
                   <Image
                     src={
                       "/images/art-class-and-studio-events/drawing-art-class.png"
@@ -172,15 +172,17 @@ export default function Home() {
           </div>
         </section>
         <section className="lg:py-16 py-10">
-          <div className="bg-banner-2 lg:py-16 py-10  space-y-8">
-            <h1 className="font-display font-semibold lg:text-6xl text-4xl leading-snug  text-center">
-              Indulge in Artful Cafe <br />
-              Delights
-            </h1>
-            <div className="mt-10 flex justify-center">
-              <Link href={"/contact-us"} className="btn-primary">
-                Our Menu
-              </Link>
+          <div className="bg-cafe ">
+            <div className="bg-white/20 lg:py-16 py-10  space-y-8">
+              <h1 className="font-display font-semibold lg:text-6xl text-4xl leading-snug  text-center">
+                Indulge in Artful Cafe <br />
+                Delights
+              </h1>
+              <div className="mt-10 flex justify-center">
+                <Link href={"/contact-us"} className="btn-primary">
+                  Our Menu
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -191,7 +193,7 @@ export default function Home() {
 
 function Hero() {
   return (
-    <section className=" pt-24 bg-home-banner">
+    <section className=" pt-16 bg-home-banner">
       <div className="container mx-auto">
         <div className="flex lg:flex-row flex-col-reverse gap-8 lg:gap-0 lg:px-10 px-5">
           <div className="basis-7/12 ">
@@ -205,8 +207,8 @@ function Hero() {
                 Artists from across South Africa Represented. <br /> Art is our
                 Passion
               </p>
-              <button className="btn-primary inline-flex items-center gap-2 group">
-                <span>{"Let's Begin"}</span>
+              <button className="btn-primary px-8 py-3 inline-flex items-center gap-2 group">
+                <span className="text-xl">{"Let's Begin"}</span>
                 <HiArrowRight className="w-5 h-5 group-hover:translate-x-2 transition duration-200" />
               </button>
             </div>
@@ -222,8 +224,10 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="">
-          <ScrollDownIcon />
+        <div className="text-center">
+          <Link href={"/#exhibition"}>
+            <ScrollDownIcon />
+          </Link>
         </div>
       </div>
     </section>
