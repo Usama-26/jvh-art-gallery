@@ -17,65 +17,85 @@ export default function Home() {
             </Heading>
             <div className="container mx-auto">
               <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:px-20 px-10 mt-20">
-                <div className="bg-white shadow-custom text-center ">
+                <div className="bg-white shadow-custom rounded-xl text-center ">
                   <Image
                     src={"/images/exhibition/memento-solo.png"}
                     height={250}
                     width={300}
                     alt="En Beaute"
-                    className="h-48 object-cover w-full"
+                    className="h-48 rounded-t-xl object-cover w-full"
                   />
-                  <div className="p-4">
+                  <div className="p-4 ">
                     <h3 className="text-lg font-semibold">Memento Solo</h3>
-                    <p className="text-primary mb-4">6 August 2023 @ 11h 00</p>
-                    <button className="btn-secondary">Book Now</button>
+                    <p className="text-primary mb-6">6 August 2023 @ 11h 00</p>
+                    <Link
+                      href={"/exhibitions/#mementoSolo"}
+                      className="btn-secondary"
+                    >
+                      Read More
+                    </Link>
                   </div>
                 </div>
-                <div className="bg-white shadow-custom text-center ">
+                <div className="bg-white shadow-custom rounded-xl text-center ">
                   <Image
                     src={"/images/exhibition/my-journey.png"}
                     height={250}
                     width={300}
-                    alt="En Beaute"
-                    className="h-48 object-cover w-full"
+                    alt="My Journey"
+                    className="h-48 rounded-t-xl object-cover w-full"
                   />
-                  <div className="p-4">
+                  <div className="p-4 ">
                     <h3 className="text-lg font-semibold">My Journey</h3>
-                    <p className="text-primary mb-4">6 August 2023 @ 11h 00</p>
-                    <button className="btn-secondary">Book Now</button>
+                    <p className="text-primary mb-6">6 August 2023 @ 11h 00</p>
+
+                    <Link
+                      href={"/exhibitions/#myJourney"}
+                      className="inline-block btn-secondary"
+                    >
+                      Read More
+                    </Link>
                   </div>
                 </div>
-                <div className="bg-white shadow-custom text-center ">
+                <div className="bg-white shadow-custom rounded-xl text-center ">
                   <Image
                     src={"/images/exhibition/en-beaute.png"}
                     height={250}
                     width={300}
                     alt="En Beaute"
-                    className="h-48 object-cover w-full"
+                    className="h-48 rounded-t-xl object-cover w-full"
                   />
-                  <div className="p-4">
+                  <div className="p-4 ">
                     <h3 className="text-lg font-semibold">En Beaute</h3>
-                    <p className="text-primary mb-4">6 August 2023 @ 11h 00</p>
-                    <button className="btn-secondary">Book Now</button>
+                    <p className="text-primary mb-6">6 August 2023 @ 11h 00</p>
+                    <Link
+                      href={"/exhibitions/#enBeaute"}
+                      className="btn-secondary"
+                    >
+                      Read More
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="flex justify-center mt-10">
-                <button className="btn-primary">View All</button>
+                <Link href={"/exhibitions"} className="btn-primary">
+                  View All
+                </Link>
               </div>
             </div>
           </div>
         </section>
         <section className="lg:py-16 py-10">
-          <div className="bg-banner-2 lg:py-16 py-10  space-y-8">
-            <h1 className="font-display font-semibold lg:text-6xl text-4xl leading-snug  text-center">
-              Frame Your ArtWork <br />
-              Perfectly
-            </h1>
-            <div className="mt-10 flex justify-center">
-              <Link href={"/contact-us"} className="btn-primary">
-                Contact Us
-              </Link>
+          <div className="bg-banner-2 ">
+            <div className="bg-white/30 lg:py-16 py-10  space-y-8">
+              <h1 className="font-display font-semibold lg:text-6xl text-4xl leading-snug  text-center">
+                Frame Your ArtWork <br />
+                Perfectly
+              </h1>
+              <div className="mt-10 flex justify-center">
+                <Link href={"/contact-us"} className="btn-primary">
+                  Contact Us
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -89,7 +109,7 @@ export default function Home() {
 
             <div className="container mx-auto">
               <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:px-20 px-10 mt-20">
-                <div className="bg-white shadow-custom ">
+                <div className="bg-white shadow-custom rounded-xl ">
                   <Image
                     src={
                       "/images/art-class-and-studio-events/mixed-media-encaustic-workshop.png"
@@ -97,11 +117,11 @@ export default function Home() {
                     height={250}
                     width={300}
                     alt="drawing-art-class"
-                    className="h-48 object-cover w-full"
+                    className="h-48 rounded-t-xl object-cover w-full"
                   />
-                  <div className="p-4 space-y-4">
+                  <div className="p-4 spa4">
                     <h3 className="text-lg font-semibold">
-                      Drawing / Art Classe
+                      Drawing / Art Classe 8 6{" "}
                     </h3>
                     <p className=" mb-4 line-clamp-1">
                       Basic drawing material will be provided, you an bring your
@@ -110,11 +130,16 @@ export default function Home() {
                     <p>10H 00 to 15H 00</p>
                     <div className="flex justify-between items-center">
                       <p className="font-semibold">R 750,00 / class</p>
-                      <button className="btn-secondary">Read More</button>
+                      <Link
+                        href={"/art-classes-and-studio-events/#mixedMedia"}
+                        className="btn-secondary"
+                      >
+                        Read More
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div className="bg-white shadow-custom ">
+                <div className="bg-white shadow-custom rounded-xl ">
                   <Image
                     src={
                       "/images/art-class-and-studio-events/etching-and-lino-cutting-classes.png"
@@ -122,11 +147,11 @@ export default function Home() {
                     height={250}
                     width={300}
                     alt="drawing-art-class"
-                    className="h-48 object-cover w-full"
+                    className="h-48 rounded-t-xl object-cover w-full"
                   />
-                  <div className="p-4 space-y-4">
+                  <div className="p-4 spa4">
                     <h3 className="text-lg font-semibold">
-                      Drawing / Art Classe
+                      Drawing / Art Classe 8 6{" "}
                     </h3>
                     <p className=" mb-4 line-clamp-1">
                       Basic drawing material will be provided, you an bring your
@@ -135,11 +160,16 @@ export default function Home() {
                     <p>10H 00 to 15H 00</p>
                     <div className="flex justify-between items-center">
                       <p className="font-semibold">R 750,00 / class</p>
-                      <button className="btn-secondary">Read More</button>
+                      <Link
+                        href={"/art-classes-and-studio-events/#etchingClass"}
+                        className="btn-secondary"
+                      >
+                        Read More
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div className="bg-white shadow-custom ">
+                <div className="bg-white shadow-custom rounded-xl ">
                   <Image
                     src={
                       "/images/art-class-and-studio-events/drawing-art-class.png"
@@ -147,11 +177,11 @@ export default function Home() {
                     height={250}
                     width={300}
                     alt="drawing-art-class"
-                    className="h-48 object-cover w-full"
+                    className="h-48 rounded-t-xl object-cover w-full"
                   />
-                  <div className="p-4 space-y-4">
+                  <div className="p-4">
                     <h3 className="text-lg font-semibold">
-                      Drawing / Art Classe
+                      Drawing / Art Classe 8 6{" "}
                     </h3>
                     <p className=" mb-4 line-clamp-1">
                       Basic drawing material will be provided, you an bring your
@@ -160,20 +190,30 @@ export default function Home() {
                     <p>10H 00 to 15H 00</p>
                     <div className="flex justify-between items-center">
                       <p className="font-semibold">R 750,00 / class</p>
-                      <button className="btn-secondary">Read More</button>
+                      <Link
+                        href={"/art-classes-and-studio-events/#artClass"}
+                        className="btn-secondary"
+                      >
+                        Read More
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="flex justify-center mt-10">
-                <button className="btn-primary">View All</button>
+                <Link
+                  href="/art-classes-and-studio-events"
+                  className="btn-primary"
+                >
+                  View All
+                </Link>
               </div>
             </div>
           </div>
         </section>
         <section className="lg:py-16 py-10">
           <div className="bg-cafe ">
-            <div className="bg-white/20 lg:py-16 py-10  space-y-8">
+            <div className="bg-white/40 lg:py-16 py-10  space-y-8">
               <h1 className="font-display font-semibold lg:text-6xl text-4xl leading-snug  text-center">
                 Indulge in Artful Cafe <br />
                 Delights
@@ -198,7 +238,7 @@ function Hero() {
         <div className="flex lg:flex-row flex-col-reverse gap-8 lg:gap-0 lg:px-10 px-5">
           <div className="basis-7/12 ">
             <div className="mt-10 space-y-6 lg:text-left text-center">
-              <h1 className="lg:text-6xl text-5xl  font-display">
+              <h1 className="lg:text-6xl text-4xl  font-display">
                 Experience the Artistic Journey
               </h1>
               <p className="font-serif text-[#6B6E80]">
